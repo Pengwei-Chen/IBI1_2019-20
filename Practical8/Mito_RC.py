@@ -6,7 +6,6 @@ wri=open(rea,'w')
 line=read.readline()
 lines=''
 count=0
-space="                                      "
 def RC(seq):
     com=''
     rc=''
@@ -33,7 +32,7 @@ while True:
         out='Name:'+name
         wri.write(out)
         for i in range (0,n):
-            out=space[i]
+            out=' '
             wri.write(out)
         while True:
             line=read.readline()

@@ -4,7 +4,6 @@ read=open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa')
 wri=open('mito_gene.fa','w')
 line=read.readline()
 count=0
-space="                                      "
 while True:
     if line.startswith('>'):
         write=re.findall(r' gene:(.+) gene_biotype:',line)
@@ -15,7 +14,7 @@ while True:
         out='Name:'+name
         wri.write(out)
         for i in range (0,n):
-            out=space[i]
+            out=' '
             wri.write(out)
         while True:
             line=read.readline()
