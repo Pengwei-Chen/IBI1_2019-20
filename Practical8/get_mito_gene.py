@@ -31,6 +31,6 @@ while True:
             count+=len(line)-1
     if not line:
         break
-read.close
-wri.close
+read.close()
+wri.close()
 print('done!')
