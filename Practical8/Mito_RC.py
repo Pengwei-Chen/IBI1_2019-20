@@ -1,5 +1,4 @@
 import re
-import time
 rea=input('Please enter a filename for the new fasta file      ')
 print('Progressing...')
 read=open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa')
@@ -56,7 +55,6 @@ while True:
             count+=len(line)-1
     if not line:
         break
-time.sleep(5)
 read.close
 wri.close
 print('done!')

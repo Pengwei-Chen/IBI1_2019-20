@@ -1,5 +1,5 @@
 import re
-import time
+print('progressing...')
 read=open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa')
 wri=open('mito_gene.fa','w')
 line=read.readline()
@@ -31,6 +31,6 @@ while True:
             count+=len(line)-1
     if not line:
         break
-time.sleep(3)
 read.close
 wri.close
+print('done!')
