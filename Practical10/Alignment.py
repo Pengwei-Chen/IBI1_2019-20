@@ -58,7 +58,7 @@ def compare(seq1,seq2,name1,name2):
     output.write('alignment   '+'   '+alignment+'\n')
     output.write(name2+'         '+seq2+'\n')
     percentage=count/len(seq1)*100
-    output.write('Score = '+str(score)+'    Percentage identity = '+str(percentage)+'%\n\n\n\n\n\n')
+    output.write('Score = '+str(score)+'           Percentage identity = '+str(percentage)+'%\n\n\n\n\n\n')
 
 #main function
 output.write('Compare human to mouse\n\n')
