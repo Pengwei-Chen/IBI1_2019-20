@@ -1,0 +1,2 @@
+My output is in file 'output.fa'.
+As can been seen, only when the sequence of human protein and that of mouse protein are compared, does final BLOSUM score has a positive value and percentage identity has a high value. The reasons are that the sequence of human protein is similar to that of mouse protein, while there is no necessary connection between them and random sequences, and final BLOSUM score and percentage identity are positively associated with similarity of sequences.
