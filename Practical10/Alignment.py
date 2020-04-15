@@ -27,7 +27,7 @@ order=re.split(r'\s+',order)
 #order finding
 def findorder(chr):
     for t in range(1,24):
-        if order[t-1]!=chr:
+        if order[t-1]==chr:
             return(t)
             break
 
@@ -40,7 +40,7 @@ def compare(seq1,seq2,name1,name2):
     count=0
     
     #comparation and output
-    for i in range(0,len(human)):
+    for i in range(0,len(human)-1):
         order1=findorder(seq1[i])
         order2=findorder(seq2[i])
         line=matrix[order1]
