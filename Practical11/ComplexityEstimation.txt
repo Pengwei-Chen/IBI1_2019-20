@@ -1,0 +1,36 @@
+If you don't won't to read so much details, then O(n!^2).
+
+
+1. Complexity of recursion
+After one level of recursion, the number of cards reduces one until there is only one card in recursion, so the coplexity of recursion should be n-1.
+
+2. Complexity of algorithm
+For n cards, there are n choose 2 kinds of 4 cards combinations.
+line9    for i in range(0,len(numbers)-1):
+line10       for j in range(i+1,len(numbers)):
+
+These loops will run n*(n-1)/2 times
+and each time the program enter into five recursions, a+b, a-b (or b-a), a*b, a/b, b/a, with n-1 cards.
+
+so
+Times[n]=(Time[n-1]*5+5)*(n*(n-1)/2)
+
+I also wrote another program which always gives recursive times of the worst condition and proved my guess.
+n=1,2,3,4,5
+times=0,5,90,2730,136550
+
+To calculate the complexity, '+5','-1','*5','/2' can be ignored
+Times[n]=Times[n-1]*n^2
+Times[n]=1^2*2^2*3^2*...*n^2=n!^2
+...
+...
+...
+...O(n!^2)
+...That's incredible!
+
+Another loop to note
+line16            for k in range(0,len(numbers)):
+line17                if k!=i and k!=j:
+line18                    numbers_except.append(numbers[k])
+
+This loop, which is in i, j loop, will greatly increase the complexity. However, I use this loop only because I found that both 'list.remove' and 'del()' change my original list (numbers), although I did nothing to them.
