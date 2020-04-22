@@ -1,4 +1,4 @@
-If you don't won't to read so much details, then O(n!^2).
+If you don't won't to read so much details, then O(n!).
 
 
 1. Complexity of recursion
@@ -22,11 +22,7 @@ times=0,5,90,2730,136550
 To calculate the complexity, '+5','-1','*5','/2' can be ignored
 Times[n]=Times[n-1]*n^2
 Times[n]=1^2*2^2*3^2*...*n^2=n!^2
-...
-...
-...
-...O(n!^2)
-...That's incredible!
+O(n!)
 
 Another loop to note
 line16            for k in range(0,len(numbers)):
