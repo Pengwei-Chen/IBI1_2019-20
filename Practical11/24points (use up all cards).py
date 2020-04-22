@@ -69,7 +69,6 @@ while True:
 found=False
 times=0
 calculate(cards)
-times+=1
 if found:
     print('Yes')
 else:
