@@ -29,4 +29,4 @@ line16            for k in range(0,len(numbers)):
 line17                if k!=i and k!=j:
 line18                    numbers_except.append(numbers[k])
 
-This loop, which is in i, j loop, will greatly increase the complexity. However, I use this loop only because I found that both 'list.remove' and 'del()' change my original list (numbers), although I did nothing to them.
+This loop, which is in i, j loop, will greatly increase the complexity. However, I use this loop only because I found that both 'list.remove' and 'del()' changed my original list (numbers), although I did nothing to them.
