@@ -1,3 +1,3 @@
 In my opinion, because the practical didn't need any professional algorithms, it was relatively easy to understand. For example, I programmed my own spatial SIR model without the help of the guide and the sample file. (I think other students can do it on their own too. Maybe the snippet file is redundant.)
 Besides, in my first program, I tried to use class definition, as I had never used it before. It helped me understand how to define and use a custom class.
-There were also two notable points in spatial SIR model. First, 0.3 was too big for beta, so I reduced it. Finally, the color of the images in the guide was REALLY UGLY, I had no choice but changed it.
+There were also three notable points in spatial SIR model. First, 0.3 was too big for beta, so I reduced it. Secondly, the color of the images in the guide was REALLY UGLY, I had no choice but changed it. Finally, I added legends to figures, although they are not accurate.

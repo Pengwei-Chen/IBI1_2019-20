@@ -4,6 +4,7 @@ print('Progressing...')
 #import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 
 #create population array
 population=np.zeros((100,100))
@@ -17,7 +18,11 @@ infloc=[]
 infloc.append([outbreak[0],outbreak[1]])
 
 #create figure
-plt.figure(figsize=(6,4),dpi=150)
+plt.figure(figsize=(8,4),dpi=150)
+lightblue_patch = mpatches.Patch(color='lightblue', label='susceptiable')
+blue_patch = mpatches.Patch(color='blue', label='infected')
+darkblue_patch = mpatches.Patch(color='darkblue', label='recovered')
+plt.legend(handles=[lightblue_patch,blue_patch,darkblue_patch],bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
 plt.imshow(population,cmap='Blues',interpolation='nearest')
 plt.savefig(r'D:\time=0.png')
 
@@ -51,7 +56,11 @@ for time in range(1,101):
 
 #save image of key points
     if time==25 or time==50 or time==75 or time==100:
-        plt.figure(figsize=(6,4),dpi=150)
+        plt.figure(figsize=(8,4),dpi=150)
+        lightblue_patch = mpatches.Patch(color='lightblue', label='susceptiable')
+        blue_patch = mpatches.Patch(color='blue', label='infected')
+        darkblue_patch = mpatches.Patch(color='darkblue', label='recovered')
+        plt.legend(handles=[lightblue_patch,blue_patch,darkblue_patch],bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
         plt.imshow(population,cmap='Blues',interpolation='nearest')
         plt.savefig(r'D:\time='+str(time)+'.png')
 
