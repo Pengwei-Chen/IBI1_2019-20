@@ -57,12 +57,11 @@ for percentage in range(0,11):
     for i in range(1001):
         x.append(i)
         y.append(time.infect[i])
-
-    plt.plot(x,y,linewidth=1,label=str(percentage*10)+'%',color='#FFFFF00')
+    plt.plot(x,y,linewidth=1,label=str(percentage*10)+'%')
 
 #draw figure
 #plt.title('SIR model with different vaccination rates',fontsize=20)
-plt.title('SIR model with different vaccination rates',fontsize=20,color=cm.viridis(30))
+plt.title('SIR model with different vaccination rates',fontsize=20)
 plt.xlabel('time',fontsize=12)
 plt.ylabel('number of infected people',fontsize=12)
 plt.tick_params(axis='both',labelsize=10)
