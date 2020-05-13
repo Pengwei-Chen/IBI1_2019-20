@@ -1,0 +1,41 @@
+<ontology>
+  <term>
+    <id>GO:0005776</id>
+    <name>autophagosome</name>
+    <namespace>cellular_component</namespace>
+    <def>
+      <defstr>A double-membrane-bounded compartment that engulfs endogenous cellular material as well as invading microorganisms to target them to the lytic vacuole/lysosome for degradation as part of macroautophagy.</defstr>
+      <dbxref>
+        <acc>autophagy</acc>
+        <dbname>GOC</dbname>
+      </dbxref>
+      <dbxref>
+        <acc>0198547684</acc>
+        <dbname>ISBN</dbname>
+      </dbxref>
+      <dbxref>
+        <acc>11099404</acc>
+        <dbname>PMID</dbname>
+      </dbxref>
+    </def>
+    <synonym scope="exact">
+      <synonym_text>autophagic vacuole</synonym_text>
+      <dbxref>
+        <acc>sao8663416959</acc>
+        <dbname>NIF_Subcellular</dbname>
+      </dbxref>
+    </synonym>
+    <synonym scope="related">
+      <synonym_text>initial autophagic vacuole</synonym_text>
+      <dbxref>
+        <acc>sao8663416959</acc>
+        <dbname>NIF_Subcellular</dbname>
+      </dbxref>
+    </synonym>
+    <xref_analog>
+      <acc>sao8663416959</acc>
+      <dbname>NIF_Subcellular</dbname>
+    </xref_analog>
+    <is_a>GO:0005773</is_a>
+  </term>
+<ontology>
