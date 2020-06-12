@@ -19,9 +19,10 @@ def calculate(numbers):
             #next turn recursion
             
             #+
-            numbers_next=numbers_except+[numbers[i]+numbers[j]]
-            calculate(numbers_next)
-            times+=1
+            if found==False:
+                numbers_next=numbers_except+[numbers[i]+numbers[j]]
+                calculate(numbers_next)
+                times+=1
                     
             #-
             if found==False:
