@@ -14,7 +14,7 @@ def calculate(numbers):
             for k in range(0,len(numbers)):
                 if k!=i and k!=j:
                     numbers_except.append(numbers[k])
-            #(I don't understand why 'del' and 'remove' also change 'numbers')
+            #'del' and 'remove' also change 'numbers'
 
             #next turn recursion
             
