@@ -26,8 +26,6 @@ while True:
     if line.startswith('>'):
         write=re.findall(r' gene:(.+) gene_biotype:',line)
         name=write[0]
-        name.lstrip('['"'")
-        name.rstrip(']'"'")
         n=30-len(name)
         out='Name:'+name
         wri.write(out)
