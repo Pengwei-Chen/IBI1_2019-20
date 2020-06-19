@@ -6,26 +6,33 @@ line=read.readline()
 count=0
 while True:
     if line.startswith('>'):
-        write=re.findall(r' gene:(.+) gene_biotype:',line)
-        name=write[0]
-        n=30-len(name)
-        out='Name:'+name
-        wri.write(out)
-        for i in range (0,n):
-            out=' '
+        if re.search(r":Mito:",line):
+            write=re.findall(r' gene:(.+) gene_biotype:',line)
+            name=write[0]
+            n=30-len(name)
+            out='Name:'+name
             wri.write(out)
-        while True:
-            line=read.readline()
-            if not line:
-                out='Length:'+str(count)
+            for i in range (0,n):
+                out=' '
                 wri.write(out)
-                break
-            if line.startswith('>'):
-                out='Length:'+str(count)+'\n'
-                wri.write(out)
-                count=0
-                break
-            count+=len(line)-1
+            while True:
+                line=read.readline()
+                if not line:
+                    out='Length:'+str(count)
+                    wri.write(out)
+                    break
+                if line.startswith('>'):
+                    out='Length:'+str(count)+'\n'
+                    wri.write(out)
+                    count=0
+                    break
+                count+=len(line)-1
+        else:
+            while True:
+                line=read.readline()
+                if not line or line.startswith('>'):
+                    break
+            
     if not line:
         break
 read.close()
